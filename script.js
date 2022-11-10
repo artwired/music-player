@@ -23,7 +23,7 @@ const songs = [
 
 // Keep track of the songs
 
-let songIndex = 7
+let songIndex = 0
 
 // Initially load song info into the DOM
 
