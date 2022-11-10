@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -6,14 +6,35 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Jost', sans-serif;
-    background-image: linear-gradient(0deg, rgb(118, 64, 5) 23.8%, rgb(177, 96, 9) 92%);
+    background-image: linear-gradient(0deg, rgb(118, 63, 5) 23.8%, rgb(177, 96, 9) 92%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 h1 {
-    color: rgb(40, 23, 4);
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #371c02, #711211, #5e0606, #920606, #371c02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 800%;
+    background-position: -250%;
+    animation: animatedText 120s ease infinite alternate-reverse;
+    margin-bottom: 0px;
+}
+@keyframes animatedText {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
+h2 {
+    margin: 0 0 60px 0;
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 .music-container {
     background-color: rgb(216, 110, 5);
@@ -22,7 +43,7 @@ h1 {
     display: flex;
     padding: 20px 30px;
     position: relative;
-    margin: 80px 0;
+    margin: 60px 0 80px;
     z-index: 10;
     width: 450px;
 }
